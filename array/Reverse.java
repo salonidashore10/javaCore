@@ -19,19 +19,18 @@ public class Reverse {
         System.out.println();
 
         // Reverse Array
-        for(int i=0;i<n;i++){
-            for(int j=n-1;j>=0;j--){
-                int temp=arr[i];
-                arr[i]=arr[j];
-                arr[j]=temp;
-                i++;
-                j--;
-            }
+        int i=0,j=n-1;
+        while(i<j){
+            int temp=arr[i];
+            arr[i]=arr[j];
+            arr[j]=temp;
+            i++;
+            j--;
         }
 
         System.out.print("Reversed Array : ");
-        for(int i=0;i<n;i++){
-            System.out.print(arr[i]+" ");
+        for(int k=0;k<n;k++){
+            System.out.print(arr[k]+" ");
         }
     }
 }
